@@ -1,0 +1,756 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+/*============== HTML RESET ==============*/
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/*============== ROOT ==============*/
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --Bai: "Bai Jamjuree", sans-serif;
+}
+
+/*============== ATTRIBUTION ==============*/
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 3rem;
+  line-height: 1.7;
+  font-family: monospace;
+}
+
+.attribution a {
+  color: red;
+}
+
+@media screen and (min-width: 1000px) {
+  .attribution {
+    position: absolute;
+    bottom: 0%;
+    margin-top: unset;
+  }
+}
+
+/*============== BODY ==============*/
+body {
+  max-width: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*============== HEADER LOGO ==============*/
+.header-logo-container {
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 19.8125rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 7.625rem;
+}
+
+.header-logo-container > img {
+  width: 7.8125rem;
+  height: 7.8125rem;
+}
+
+/*============== HEADER H1 ==============*/
+.header-h1 {
+  text-align: center;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 2.125rem;
+  font-weight: 700;
+}
+
+/*============== HEADER PARAGRAPH ==============*/
+.header-paragraph {
+  color: var(--Grayish-Blue);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: calc(100% - 4.0625rem);
+  max-width: 540px;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/*============== HEADER BUTTON ==============*/
+.header-button-container {
+  margin-top: 3.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10.4375rem;
+}
+
+/*============== HEADER BUTTON CONTAINER ==============*/
+.header-button-container > button {
+  height: 3.5rem;
+  width: 19.5rem;
+  border-radius: 3.125rem;
+  color: white;
+  border: none;
+  border-bottom: 4px solid black;
+  font-family: var(--Bai);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 200ms ease-out, border-bottom 10ms ease-out;
+}
+
+.header-button-container > button:first-child {
+  background-color: var(--Strong-Cyan);
+  border-color: rgb(43, 156, 135);
+  box-shadow: 0px 0.3125rem 1.0625rem 0px rgb(209 245 233);
+}
+
+.header-button-container > button:first-child:hover {
+  background-color: rgb(93 204 187);
+}
+
+.header-button-container > button:first-child:active {
+  border-bottom: none;
+}
+
+.header-button-container > button:last-child {
+  background-color: var(--Light-Blue);
+  margin-top: 1.5rem;
+  border-color: rgb(80 99 217);
+  box-shadow: 0px 0.3125rem 1.0625rem 0px rgb(199 199 199);
+}
+
+.header-button-container > button:last-child:hover {
+  background-color: rgb(136 150 255);
+}
+
+.header-button-container > button:last-child:active {
+  border-bottom: none;
+}
+
+/*============== MAIN HEADING ==============*/
+.main-heading-h2 {
+  text-align: center;
+  font-size: 1.8125rem;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.main-heading-p {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  color: var(--Grayish-Blue);
+  text-align: center;
+  width: calc(100% - 4.6875rem);
+  max-width: 38.125rem;
+}
+
+/*============== MAIN THREE POINT ==============*/
+.main-three-point {
+  margin: 0 auto;
+  margin-top: 4.25rem;
+  max-width: 1440px;
+}
+
+/*============== MAIN THREE POINT IMAGE CONTAINER ==============*/
+.main-three-image-container {
+  width: calc(100% - 3.9375rem);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-three-image-container img {
+  width: 100%;
+  max-width: 810px;
+  max-width: 720px;
+  /* min-height: 14.875rem; */
+  display: block;
+}
+
+/*============== MAIN THREE POINT TEXT CONTAINER ==============*/
+.main-three-text-container {
+  margin-top: 3.875rem;
+}
+
+.main-three-text-container p {
+  margin: 0 auto;
+  margin-top: 0.5625rem;
+  width: calc(100% - 4.6875rem);
+}
+
+.three-point-heading {
+  font-size: 1.5rem;
+}
+
+/*============== THREE TEXT2 ==============*/
+.three-text2 > .three-point-heading {
+  margin-top: 3.625rem;
+}
+
+/*============== THREE TEXT3 ==============*/
+.three-text3 > .three-point-heading {
+  margin-top: 3.625rem;
+}
+
+/*============== MAIN ACCESS ==============*/
+.main-access {
+  margin-top: 12.3125rem;
+}
+
+.main-access-heading {
+  font-size: 1.8125rem;
+}
+
+.main-access-paragraph {
+  width: calc(100% - 4.6875rem);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/*============== MAIN ACCESS IMAGE CONTAINER ==============*/
+.main-access-image-container {
+  margin: 0 auto;
+  margin-top: 4.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 3.9375rem);
+}
+.main-access-image-container > img {
+  width: 100%;
+  max-width: 56.5625rem;
+}
+
+/*============== MAIN SUPERCHARGE ==============*/
+.main-supercharge {
+  margin-top: 4.5rem;
+}
+
+.main-supercharge-heading {
+  font-size: 1.8125rem;
+}
+
+.main-supercharge p {
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  width: calc(100% - 4.25rem);
+}
+
+/*============== SUPER THREE POINT1 ==============*/
+.super-three-point1 {
+  margin-top: 5.8125rem;
+}
+
+/*============== SUPER THREE POINT2 && SUPER POINT3 ==============*/
+.super-three-point2,
+.super-three-point3 {
+  margin-top: 3.875rem;
+}
+
+/*============== MAIN SUPERCHARGE IMAGE CONTAINER ==============*/
+.super-three-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.super-three-image-container > img {
+  max-width: 100%;
+}
+
+/*============== MAIN SUPERCHARGE THREE POINT HEADING ==============*/
+.super-point-heading {
+  font-size: 1.5rem;
+}
+
+/*============== MAIN LOGO ==============*/
+.main-logo {
+  margin-top: 8.375rem;
+  margin-bottom: 11rem;
+}
+
+/*============== MAIN LOGO CONTAINER ==============*/
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo-container > img {
+  max-width: 100%;
+}
+
+/*============== MAIN LOGOS ==============*/
+.ibm-logo {
+  margin-top: 4.0625rem;
+}
+
+.microsoft-logo {
+  margin-top: 4.3125rem;
+}
+
+.hp-logo {
+  margin-top: 3.8125rem;
+}
+
+.vector-logo {
+  margin-top: 3.5rem;
+}
+
+/*============== MAIN FOOTER ==============*/
+.main-footer-heading {
+  font-size: 1.8125rem;
+  max-width: calc(100% - 1.25rem);
+}
+
+.main-footer-paragraph {
+  margin: 0 auto;
+  margin-top: 13px;
+  width: calc(100% - 71px);
+}
+
+/*============== MAIN FOOTER BUTTON CONTAINER ==============*/
+
+.main-footer-button-container {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10.4375rem;
+}
+
+/*============== MAIN FOOTER BUTTON ==============*/
+.main-footer-button-container > button {
+  height: 3.5rem;
+  width: 19.5rem;
+  border-radius: 3.125rem;
+  color: white;
+  border: none;
+  border-bottom: 4px solid black;
+  font-family: var(--Bai);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 200ms ease-out, border-bottom 10ms ease-out;
+}
+
+.main-footer-button-container > button:first-child {
+  background-color: var(--Strong-Cyan);
+  border-color: rgb(43, 156, 135);
+  box-shadow: 0px 0.3125rem 1.0625rem 0px rgb(209 245 233);
+}
+
+.main-footer-button-container > button:first-child:hover {
+  background-color: rgb(93 204 187);
+}
+
+.main-footer-button-container > button:first-child:active {
+  border-bottom: none;
+}
+
+.main-footer-button-container > button:last-child {
+  background-color: var(--Light-Blue);
+  margin-top: 1.5rem;
+  border-color: rgb(80 99 217);
+  box-shadow: 0px 0.3125rem 1.0625rem 0px rgb(199 199 199);
+}
+
+.main-footer-button-container > button:last-child:hover {
+  background-color: rgb(136 150 255);
+}
+
+.main-footer-button-container > button:last-child:active {
+  border-bottom: none;
+}
+
+/*============== FOOTER ==============*/
+footer {
+  background-color: rgb(245 246 248);
+  border: 1px solid transparent;
+  padding-bottom: 51px;
+}
+
+/*============== FOOTER LOGO CONTAINER ==============*/
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 51px;
+  margin-bottom: 49px;
+}
+
+.footer-logo-container > img {
+  width: 56px;
+}
+
+/*============== FOOTER UL ==============*/
+.footer-ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.footer-li {
+  list-style: none;
+  transition: all 200ms ease-out;
+}
+
+.footer-li > a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 500;
+  transition: all 200ms ease-out;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-li > a:hover {
+  color: var(--Strong-Cyan);
+}
+
+.footer-ul > li:nth-child(2),
+.footer-ul > li:nth-child(3),
+.footer-ul > li:nth-child(5) {
+  margin-top: 36px;
+}
+
+.footer-ul > li:nth-child(4) {
+  margin-top: 35px;
+}
+
+/*============== SOCIALS ==============*/
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  gap: 40px;
+}
+
+/*============== SOCIAL ICON LI ==============*/
+.socials-icon-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  transition: all 200ms ease-out;
+}
+
+.socials-icon-li:hover {
+  transform: scale(1.3);
+}
+
+.socials-icon-li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a > svg {
+  transform: scale(1.1);
+}
+
+/*============== SVG PATH ==============*/
+.svg-path {
+  transition: all 200ms ease-out;
+}
+
+/*============== FACEBOOK ICON ==============*/
+.facebook-logo .svg-path {
+  fill: var(--Light-Blue);
+}
+
+/*============== TWITTER LOGO ==============*/
+.twitter-logo .svg-path {
+  fill: rgb(29, 161, 242);
+}
+
+/*============== INSTAGRAM LOGO ==============*/
+.instagram-logo .svg-path {
+  fill: rgb(245, 5, 0);
+}
+
+/*============== 1000px AND ABOVCE ==============*/
+@media screen and (min-width: 1000px) {
+  .header-logo-container {
+    background-image: url("./images/bg-header-desktop.png");
+  }
+  /*============== HEADER BUTTON CONTAINER ==============*/
+  .header-button-container {
+    margin-top: 3.1875rem;
+    flex-direction: row;
+    gap: 14px;
+    margin-bottom: 10rem;
+  }
+
+  /*============== HEADER BUTTON ==============*/
+  .header-button-container > button {
+    width: 14.3125rem;
+  }
+
+  .header-button-container > button:last-child {
+    margin-top: unset;
+  }
+
+  /*============== MAIN THREE POINT ==============*/
+  .main-three-point {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*============== MAIN THREE IMAGE CONTAINER ==============*/
+  .main-three-image-container {
+    width: 50%;
+    max-width: 720px;
+    margin: unset;
+    justify-content: flex-start;
+  }
+
+  .main-three-text-container {
+    width: 42%;
+    max-width: 609px;
+    margin-top: 3.375rem;
+  }
+
+  .three-point-heading {
+    text-align: left;
+  }
+
+  .main-three-text-container p {
+    text-align: left;
+    margin: unset;
+    margin-top: 0.5625rem;
+    max-width: 21.5625rem;
+  }
+
+  /*============== MAIN ACCESS ==============*/
+  .main-access {
+    margin-top: 10rem;
+  }
+
+  .main-access-paragraph {
+    max-width: 600px;
+  }
+
+  /*============== MAIN SUPER CHARGE ==============*/
+  .main-supercharge {
+    margin-top: 53px;
+  }
+
+  /*============== SUPER THREE POINT ==============*/
+  .super-three-point {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 76px;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 1240px;
+  }
+
+  .super-three-point1,
+  .super-three-point2,
+  .super-three-point3 {
+    margin-top: unset;
+  }
+
+  .main-supercharge p {
+    max-width: 412px;
+  }
+
+  /*============== MAIN LOGO ==============*/
+  .main-logo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    margin-top: 8.375rem;
+    margin-bottom: 10.4375rem;
+    max-width: 1240px;
+  }
+
+  /*============== MAIN LOGOS ==============*/
+  .ibm-logo {
+    margin-top: unset;
+  }
+
+  .microsoft-logo {
+    margin-top: unset;
+  }
+
+  .hp-logo {
+    margin-top: unset;
+  }
+
+  .vector-logo {
+    margin-top: unset;
+  }
+
+  .main-footer-paragraph {
+    max-width: 620px;
+  }
+
+  /*============== MAIN FOOTER BUTTON CONTAINER ==============*/
+  .main-footer-button-container {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 51px;
+    margin-bottom: 151px;
+  }
+
+  /*============== MAIN FOOTER BUTTON  ==============*/
+  .main-footer-button-container > button {
+    width: 14.3125rem;
+  }
+
+  .main-footer-button-container > button:last-child {
+    margin-top: unset;
+  }
+
+  /*============== FOOTER ==============*/
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: unset;
+    position: relative;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 71px;
+  }
+
+  .footer-logo-container {
+    margin: unset;
+  }
+
+  .footer-ul {
+    margin-left: 130px;
+    justify-items: start;
+    grid-template-areas:
+      "faq privacy install"
+      "contact press .";
+    row-gap: 12px;
+    grid-auto-rows: max-content;
+  }
+
+  .footer-ul > li:nth-child(2),
+  .footer-ul > li:nth-child(3),
+  .footer-ul > li:nth-child(5) {
+    margin-top: unset;
+  }
+
+  .footer-ul > li:nth-child(4) {
+    margin-top: unset;
+  }
+
+  .footer-li {
+    width: 190px;
+  }
+
+  .faq {
+    grid-area: faq;
+  }
+
+  .faq > a {
+    text-align: left;
+  }
+
+  .contact {
+    grid-area: contact;
+  }
+
+  .privacy {
+    grid-area: privacy;
+  }
+
+  .press {
+    grid-area: press;
+  }
+
+  .install {
+    grid-area: install;
+  }
+
+  /*============== SOCIALS ==============*/
+  .socials {
+    margin-top: unset;
+    gap: 24px;
+  }
+}
+
+/*============== 1150px AND ABOVCE ==============*/
+@media screen and (min-width: 1150px) {
+  /*============== MAIN LOGO ==============*/
+  .main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: unset;
+    justify-content: space-between;
+    padding-inline: 45px;
+  }
+
+  .ibm-logo {
+    margin-top: unset;
+    margin-left: 6.25rem;
+  }
+
+  .microsoft-logo {
+    margin-top: unset;
+    margin-left: 95px;
+  }
+
+  .hp-logo {
+    margin-top: unset;
+    margin-left: 93px;
+  }
+
+  .vector-logo {
+    margin-top: unset;
+    margin-left: 95px;
+  }
+
+  .footer-container {
+    max-width: 1240px;
+  }
+
+  .socials {
+    margin-top: unset;
+    margin-left: 130px;
+    gap: 24px;
+  }
+}
