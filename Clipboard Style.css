@@ -227,6 +227,14 @@ p {
 
 .main-access-heading {
   font-size: 1.8125rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .main-access-heading {
+    max-width: unset;
+  }
 }
 
 .main-access-paragraph {
@@ -257,6 +265,14 @@ p {
 
 .main-supercharge-heading {
   font-size: 1.8125rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .main-supercharge-heading {
+    max-width: unset;
+  }
 }
 
 .main-supercharge p {
@@ -338,6 +354,13 @@ p {
   font-size: 1.8125rem;
   max-width: calc(100% - 1.25rem);
   margin: 0 auto;
+  max-width: 355px;
+}
+
+@media screen and (min-width: 500px) {
+  .main-footer-heading {
+    max-width: unset;
+  }
 }
 
 .main-footer-paragraph {
