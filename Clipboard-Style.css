@@ -482,6 +482,9 @@ footer {
 
 /*============== SOCIALS ==============*/
 .socials {
+}
+
+.socials-ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -742,7 +745,7 @@ a > svg {
   }
 
   /*============== SOCIALS ==============*/
-  .socials {
+  .socials-ul {
     margin-top: unset;
     gap: 24px;
   }
@@ -784,7 +787,7 @@ a > svg {
     max-width: 1240px;
   }
 
-  .socials {
+  .socials-ul {
     margin-top: unset;
     margin-left: 130px;
     gap: 24px;
