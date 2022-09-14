@@ -215,25 +215,24 @@
 
       <div class="attribution">
         Challenge by
-        <a
-          class="linear-wipe"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a
-          class="linear-wipe"
-          href="https://www.frontendmentor.io/profile/fistty"
-          target="_blank"
+        <a href="https://www.frontendmentor.io/profile/fistty" target="_blank"
           >Osuntuyi Ayomide Amos</a
         >. View other solutions
-        <a
-          class="linear-wipe"
-          href="https://www.frontendmentor.io/profile/fistty"
-          target="_blank"
+        <a href="https://www.frontendmentor.io/profile/fistty" target="_blank"
           >here</a
         >.
       </div>
     </footer>
+    <script>
+      const links = document.querySelectorAll("a");
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
   </body>
 </html>
