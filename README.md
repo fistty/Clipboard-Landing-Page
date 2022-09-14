@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Solution](https://www.frontendmentor.io/solutions/fylo-landing-page-two-column-hover-state-and-email-validation-b41BpwOgV3)
+- Solution URL: [Frontend Solution](https://www.frontendmentor.io/solutions/clipboard-landing-page-f6J-eoh46U)
 - Live Site URL: [Netlify Live Site](https://fistty-clipboard-landing-page.netlify.app/)
 
 ## My process
