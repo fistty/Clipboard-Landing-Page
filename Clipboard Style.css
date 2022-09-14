@@ -233,6 +233,7 @@ p {
   width: calc(100% - 4.6875rem);
   margin: 0 auto;
   margin-top: 1rem;
+  max-width: 600px;
 }
 
 /*============== MAIN ACCESS IMAGE CONTAINER ==============*/
@@ -262,6 +263,7 @@ p {
   margin: 0 auto;
   margin-top: 0.75rem;
   width: calc(100% - 4.25rem);
+  max-width: 547px;
 }
 
 /*============== SUPER THREE POINT1 ==============*/
@@ -285,6 +287,11 @@ p {
 
 .super-three-image-container > img {
   max-width: 100%;
+  transition: all 200ms ease-out;
+}
+
+.super-point:hover img {
+  transform: scale(1.4);
 }
 
 /*============== MAIN SUPERCHARGE THREE POINT HEADING ==============*/
@@ -337,6 +344,7 @@ p {
   margin: 0 auto;
   margin-top: 13px;
   width: calc(100% - 71px);
+  max-width: 743px;
 }
 
 /*============== MAIN FOOTER BUTTON CONTAINER ==============*/
